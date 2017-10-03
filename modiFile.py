@@ -4,7 +4,7 @@
 import sys
 import numpy
 import argparse
-import associate
+
 
 def read_trajectory(filename, matrix=True):
     """
@@ -52,7 +52,7 @@ parser.add_argument('orig_file', help='ground-truth trajectory file (format: "ti
 parser.add_argument('new_file', help='estimated trajectory file (format: "timestamp tx ty tz qx qy qz qw")')
 args = parser.parse_args()
 print ("Reading "+args.orig_file)
-traj_gt = read_trajectory(args.orig_file,False)
+traj_gt = read_trajectory(args.orig_file,False) # reads trajectory from groundTruth and performs small changes
 
 #Open a new outputFile, writing mode
 fileOutput = open(args.new_file,'w')
