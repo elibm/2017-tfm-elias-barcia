@@ -1,6 +1,6 @@
 # Small python script that reads an input file
-# Perform a modification and generates a new output file with new data based on the first Input file data.
-# Format of Input and Output file
+# Performs a modification and generates a new output file with new data based on the first Input file data.
+# Format of Input and Output file "timestamp tx ty tz qx qy qz qw"
 import sys
 import numpy
 import argparse
